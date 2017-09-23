@@ -1,0 +1,3 @@
+echo "Use --no-install-deps option if installing on a machine without root
+access."
+command ruby-install $@

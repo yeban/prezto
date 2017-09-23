@@ -5,6 +5,12 @@
 # Authors: Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+
+if zstyle -t ':prezto:module:ruby' chruby; then
+  export PATH="$HOME/.zprezto/modules/ruby/external/ruby-install/bin:$PATH"
+  export PATH="$HOME/.zprezto/modules/ruby/external/chruby/bin:$PATH"
+fi
+
 # Load RVM into the shell session.
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
   # Unset AUTO_NAME_DIRS since auto adding variable-stored paths to ~ list

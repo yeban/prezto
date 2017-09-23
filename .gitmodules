@@ -28,3 +28,9 @@
 [submodule "modules/prompt/external/powerlevel9k"]
 	path = modules/prompt/external/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "modules/ruby/external/ruby-install"]
+	path = modules/ruby/external/ruby-install
+	url = https://github.com/postmodern/ruby-install.git
+[submodule "modules/ruby/external/chruby"]
+	path = modules/ruby/external/chruby
+	url = https://github.com/postmodern/chruby.git
