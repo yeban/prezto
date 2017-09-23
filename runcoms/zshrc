@@ -15,10 +15,6 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.zsh" && \
   source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Load user defined functions from .zprezto/functions
-autoload -U $HOME/.zprezto/functions/*(:t)
-fpath=($HOME/.zprezto/functions $fpath)
-
 # Change behaviour of the `e` alias: send files
 # to the running gvim server.
 export VISUAL="gvim --remote-tab-wait-silent"
