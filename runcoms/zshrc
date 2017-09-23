@@ -3,11 +3,23 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Anurag Priyam <a.priyam@icloud.com>
 #
 
-# Source Prezto.
+# Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Enable iTerm shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && \
+  source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Load user defined functions from .zprezto/functions
+autoload -U $HOME/.zprezto/functions/*(:t)
+fpath=($HOME/.zprezto/functions $fpath)
+
+# Change behaviour of the `e` alias: send files
+# to the running gvim server.
+export VISUAL="gvim --remote-tab-wait-silent"
+
