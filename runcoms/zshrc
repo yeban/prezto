@@ -6,6 +6,9 @@
 #   Anurag Priyam <a.priyam@icloud.com>
 #
 
+# Indicate that we are running inside a 256 colour terminal.
+export TERM="xterm-256color"
+
 # Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
