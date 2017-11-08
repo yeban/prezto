@@ -120,7 +120,7 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 #
 
 # Set the prompt theme to load.
-zstyle ':prezto:module:prompt' theme 'powerlevel9k'
+zstyle ':prezto:module:prompt' theme 'pure'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
