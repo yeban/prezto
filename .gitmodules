@@ -37,3 +37,6 @@
 [submodule "modules/autoenv"]
 	path = modules/autoenv
 	url = https://github.com/Tarrasch/zsh-autoenv.git
+[submodule "modules/tmux/external"]
+	path = modules/tmux/external
+	url = https://github.com/gpakosz/.tmux.git
