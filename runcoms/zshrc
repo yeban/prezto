@@ -22,3 +22,4 @@ fi
 # to the running gvim server.
 export VISUAL="gvim --remote-tab-wait-silent"
 
+alias du="du -hs"
