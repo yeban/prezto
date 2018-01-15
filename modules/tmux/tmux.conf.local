@@ -1,0 +1,87 @@
+# Do not run login shell
+set -g default-command zsh
+
+# New window retains current path.
+tmux_conf_new_window_retain_current_path=true
+
+# RGB 24-bit colour support (tmux >= 2.2).
+tmux_conf_theme_24b_colour=true
+
+# Window style
+tmux_conf_theme_window_fg='default'
+tmux_conf_theme_window_bg='default'
+
+# status line style
+tmux_conf_theme_message_fg='brightred'
+tmux_conf_theme_message_bg='black'
+tmux_conf_theme_message_attr='bold'
+
+# status line command style (<prefix> : Escape)
+tmux_conf_theme_message_command_fg='default'
+tmux_conf_theme_message_command_bg='default'
+tmux_conf_theme_message_command_attr='bold'
+
+# window modes style
+tmux_conf_theme_mode_fg='default'
+tmux_conf_theme_mode_bg='default'
+tmux_conf_theme_mode_attr='bold'
+
+# status line style
+tmux_conf_theme_status_fg='default'
+tmux_conf_theme_status_bg='default'
+tmux_conf_theme_status_attr='default'
+
+# window status style
+#   - built-in variables are:
+#     - #{circled_window_index}
+tmux_conf_theme_window_status_fg='brightblue'
+tmux_conf_theme_window_status_bg='default'
+tmux_conf_theme_window_status_attr='dim'
+tmux_conf_theme_window_status_format='#I #W'
+#tmux_conf_theme_window_status_format='#{circled_window_index} #W'
+#tmux_conf_theme_window_status_format='#I #W#{?window_bell_flag,🔔,}#{?window_zoomed_flag,🔍,}'
+
+# window current status style
+#   - built-in variables are:
+#     - #{circled_window_index}
+tmux_conf_theme_window_status_current_fg='brightred'
+tmux_conf_theme_window_status_current_bg='default'
+tmux_conf_theme_window_status_current_attr='bold'
+tmux_conf_theme_window_status_current_format='#I #W'
+#tmux_conf_theme_window_status_current_format='#{circled_window_index} #W'
+#tmux_conf_theme_window_status_current_format='#I #W#{?window_zoomed_flag,🔍,}'
+
+# window activity status style
+tmux_conf_theme_window_status_activity_fg='default'
+tmux_conf_theme_window_status_activity_bg='default'
+tmux_conf_theme_window_status_activity_attr='underscore'
+
+# window bell status style
+tmux_conf_theme_window_status_bell_fg='black'
+tmux_conf_theme_window_status_bell_bg='red'
+tmux_conf_theme_window_status_bell_attr='blink,bold'
+
+# window last status style
+tmux_conf_theme_window_status_last_fg='default'
+tmux_conf_theme_window_status_last_bg='default'
+tmux_conf_theme_window_status_last_attr='none'
+
+# status left/right sections separators
+tmux_conf_theme_left_separator_main=''
+tmux_conf_theme_left_separator_sub='|'
+tmux_conf_theme_right_separator_main=''
+tmux_conf_theme_right_separator_sub='|'
+
+# Status line.
+tmux_conf_theme_status_left=' [#S] '
+tmux_conf_theme_status_right='#{username}@#{hostname} [#{loadavg}]'
+
+# Status left style
+tmux_conf_theme_status_left_fg='#e4e4e4'  # white
+tmux_conf_theme_status_left_bg='default'
+tmux_conf_theme_status_left_attr='bold'
+
+# Status right style
+tmux_conf_theme_status_right_fg='default'
+tmux_conf_theme_status_right_bg='default'
+tmux_conf_theme_status_right_attr='bold'
