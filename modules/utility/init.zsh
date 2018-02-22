@@ -41,7 +41,7 @@ alias ftp='noglob ftp'
 alias history='noglob history'
 alias locate='noglob locate'
 alias rake='noglob rake'
-alias rsync='noglob noremoteglob rsync'
+alias rsync='noglob rsync'
 alias scp='noglob noremoteglob scp'
 alias sftp='noglob sftp'
 
