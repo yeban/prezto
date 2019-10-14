@@ -5,11 +5,10 @@
 # Authors: Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-
-if zstyle -t ':prezto:module:ruby' chruby; then
-  export PATH="$HOME/.zprezto/modules/ruby/external/ruby-install/bin:$PATH"
-  export PATH="$HOME/.zprezto/modules/ruby/external/chruby/bin:$PATH"
-fi
+# Add bundled ruby-install and chruby to PATH. This is automatically picked
+# by the if-else ladder below which does more configuration.
+export PATH="${0:a:h}/external/ruby-install/bin:$PATH"
+export PATH="${0:a:h}/external/chruby/bin:$PATH"
 
 # Load RVM into the shell session.
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
